@@ -1,0 +1,486 @@
+:root{
+    --color: #f7b600;;
+	--bkcolor: #e6e6e6;;
+	--color2: white;
+	--EditAndLink: #0362fc;;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	
+	
+}
+
+@media (min-width: 576px) { 
+
+}
+
+@media (min-width: 768px) { 
+	.mysidebar{
+		display:block!important;
+		
+		
+	}
+
+	
+	#botaoMenu{
+		visibility: hidden;
+	}
+	body{
+		background-color: var(--bkcolor)!important;
+       
+	}
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* make scrollbar transparent */
+    }
+
+	main{
+		margin-top: 70px!important;
+		 margin-left: 25%!important;
+		 padding-left: 15px!important;
+		 padding-right: 15px!important;
+         margin-left: 310px!important;
+         overflow-x: hidden;
+         overflow-y: scroll;
+         
+	}
+
+	#fotos-nomes{
+		height: 200px!important;
+	}
+
+	#foto-nome-usuario{
+		margin-left: 10vh!important;
+	}
+
+	#fotoUsuario{
+		height: 100px!important;
+		width: 100px!important;
+		
+	}
+
+	
+
+	.foto-animal{
+		height: 80px!important;
+		width: 80px!important;
+		
+		
+	}
+
+	.carousel-pets{
+		width: 75%!important;
+		margin-left: 10vh!important;
+	}
+
+	
+}
+
+@media (min-width: 992px) { 
+	#subscription{
+		display: block!important;
+	}
+}
+
+
+
+@media (max-width: 991px) and (min-width: 768px){
+a {
+	font-size: 15px!important;
+}
+
+}
+
+body{
+	background-color: var(--bkcolor) ;
+	color: var(--color)!important;
+	font-family: 'Quicksand', sans-serif!important;
+	box-sizing: border-box;
+}
+
+
+main{
+	margin-top: 60px!important;
+	margin-left: 0px;
+	box-sizing: border-box;
+	
+}
+
+#fotos-nomes{
+	height:180px;
+	background-color: var(--color2);
+	width: 100%;
+	
+	
+}
+	
+#backpic{
+	width: 100%;
+	height: 50%;
+	object-fit: cover;
+	cursor: pointer;
+}
+
+#backUpload{
+	display: none;
+}
+
+#fotos-nomes-todos{
+	margin-top: 20px;
+	transform: translateY(-50%);
+	margin-left: 5%;
+	margin-right: 5%;
+	z-index: 2;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	
+	
+}
+
+
+#foto-nome-usuario{
+	
+	margin-left: 2vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+#fotoUsuario{
+	border-radius: 50%;
+	height: 90px;
+	width: 90px;
+	object-fit: cover;
+	border: solid var(--color) 3px;
+	cursor: pointer;
+}
+
+.carousel-pets{
+	margin-left: 10px;
+	width: 90%;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+	height: 100%;
+	min-height: 200px;
+	
+}
+
+
+.fotos-nomes-animais{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: nowrap;
+	    margin-left: 50%;
+    transform: translateX(-50%);
+	height: 100%;
+	padding-right: 15px;
+}
+
+.carousel-control-prev span{
+	width: 1.5rem;
+}
+
+
+.carousel-control-next span{
+	width: 1.5rem;
+}
+
+.foto-nome-animal{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+.foto-animal{
+	border-radius: 50%;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	border: solid var(--color) 3px;
+}
+
+.nome-animal, .nome-usuario{
+	font-weight: 700;
+	text-align: center;
+	margin-top: 5px;
+}
+
+#fotoUsuario:hover {
+	-webkit-filter: grayscale(1);
+	/* Webkit */
+	filter: gray;
+	/* IE6-9 */
+	filter: grayscale(1);
+	/* W3C */
+}
+
+.foto-animal:hover {
+	-webkit-filter: grayscale(1);
+	/* Webkit */
+	filter: gray;
+	/* IE6-9 */
+	filter: grayscale(1);
+	/* W3C */
+}
+
+#backpic:hover {
+	-webkit-filter: grayscale(1);
+	/* Webkit */
+	filter: gray;
+	/* IE6-9 */
+	filter: grayscale(1);
+	/* W3C */
+}
+
+#imageUpload{
+	display:none;
+}
+
+.botaobicho{
+	display: none;
+}
+
+#info{
+	margin-top: 10px;
+	padding: 20px;
+	background-color: var(--color2);
+}
+
+
+#info p{
+	color: black;
+	margin: 10px;
+}
+
+#dados, #pets{
+	display: inline;
+}
+
+.editar{
+
+	margin-left: 200px;
+	text-decoration: underline;
+}
+
+.editarPet{
+	text-decoration: underline;
+	margin-left: 200px;
+}
+
+
+.lapinho{
+	display: none;
+	height: 10px;
+	width: 10px;
+	margin-bottom: 2px;
+}
+
+.underline{
+	border-bottom: var(--color) solid 1px!important;
+}
+.botao-estilizado{
+	border: none;
+	width: 250px;
+	outline: none;
+	margin: 10px;
+}
+
+select{
+	border: none!important;
+	outline: none!important;
+}
+
+
+
+
+
+.salvar{
+	margin-left: 200px;
+	display: none;
+	
+	text-decoration: underline;
+}
+
+.salvarPet{
+	display: none;
+	margin-left: 200px;
+	text-decoration: underline;
+}
+
+.nascimento{
+	margin-left: 18px;
+}
+
+
+#info-usuario, #info-animais{
+	padding:10px;
+}
+
+#info-animais{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#tabela-animais{
+	margin-top: 15px;
+}
+
+thead td{
+	padding-left: 10px;
+}
+
+#info-animais input{
+	width: 90%;
+}
+
+#phone{
+	border: none;
+	outline: var(--color);
+	width: 250px;
+	
+}
+
+#seta-direita{
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+#mais{
+	margin-top:5px;
+	width: 12px;
+	height: auto;
+	cursor: pointer;
+}
+
+
+
+.maisinho{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 3px;
+	width: 12px;
+	height: auto;
+	cursor: pointer;
+}
+
+.xis{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 3px;
+	width: 12px;
+	height: auto;
+	cursor: pointer;
+}
+
+.invisivel{
+	display:none;
+}
+
+.aparecer-lapinho{
+	display: flex;
+
+}
+
+.xis{
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 3px;
+	width: 12px;
+	height: auto;
+}
+
+#subscription{
+	padding-top: 70px;
+	position: fixed;
+	right: 0.65%;
+}
+
+#amigos{
+	margin-top: 10px;
+	background-color: var(--color2);
+	padding: 20px;
+	overflow:hidden;
+	
+}
+
+#carouselExampleDark{
+	flex-wrap: nowrap;
+}
+
+.carousel-control-prev,.carousel-control-next {
+	width: auto!important;
+
+}
+
+.rowAmigos{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 30px 0 30px;
+}
+.amigo{
+	background-color: var(--color2);
+	width: 20%!important;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 20px 20px 0 20px;
+	
+	
+}
+
+.imgPessoa{
+
+	width: 100px!important;
+	border-radius: 50%;
+	border: solid 3px var(--color);
+}
+
+.rowAmigos p, .rowPets p{
+	font-weight: bold;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.rowAmigos p:hover{
+	text-decoration: underline;
+	cursor: pointer;
+
+}
+
+#verTudo{
+	border: none;
+	outline: none;
+	background-color: none;
+	color: var(--color);
+	cursor: pointer;
+	font-weight: bold;
+	float: right;
+	padding: 0;
+	margin: 0;
+}
+
+#verTudo:hover{
+	text-decoration: underline;
+}
+
+.carousel-inner{
+	padding-right: 0%;
+}
